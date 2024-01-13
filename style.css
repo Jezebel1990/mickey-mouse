@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body{
+    background-image: conic-gradient(
+        #033b56 0%,
+        #005c93 10%,
+        #78b7db 10%,
+        #008acb 20%,
+        #006bb1 20%,
+        #033b56 30%,
+        #005c93 30%,
+        #78b7db 40%,
+        #008acb 40%,
+        #006bb1 50%,
+        #033b56 50%,
+        #005c93 60%,
+        #78b7db 60%,
+        #008acb 70%,
+        #006bb1 70%,
+        #033b56 80%,
+        #005c93 80%,
+        #78b7db 90%,
+        #008acb 90%,
+        #006bb1 100%
+    );
+    width: 100%;
+    min-height: 100vh; 
+    background-size: 110%;
+    background-position: left;
+    background-attachment: fixed;
+    animation: animateBg 10s linear infinite alternate;
+  }
+  @keyframes animateBg{
+    100%{
+      background-position: right;
+    }
+}
+
+
+#container{
+    margin: 0 auto;
+    position: relative;
+    width: 850px;
+    height: 879px;
+    
+}
+
+#container * {
+    position: absolute;
+    
+}
+
+.head {
+    width: 510px;
+    height: 525px;
+    background-color: #010101;
+    border-radius: 50%;
+    top: 260px;
+    left: 165px;
+}
+
+.ear{
+    width: 280px;
+    height: 350px;
+    background-color: #010101;
+    border-radius: 50%;
+}
+
+.left{
+    top:50px;
+    left: 50px;
+    transform: rotate(20deg);
+}
+
+.right{
+    top:50px;
+    right: 50px;
+    transform: rotate(-20deg);
+}
+
+.face {
+    position: relative;
+    width: 520px;
+    height: 530px;
+    top: 280px;
+    left: 170px
+}
+
+.front{
+    background-color: #fde2c4;
+    width: 215px;
+    height: 380px;
+    border-radius: 50%;
+    top: 15px;
+}
+
+.fleft{
+    left: 60px;
+}
+
+.fright{
+    right: 90px;
+}
+
+.cheek {
+    background-color: #fde2c4;
+    width: 150px;
+    height: 270px;
+    border: 5px solid #010101;
+    border-radius: 50%;
+    top: 240px;
+}
+
+.cleft {
+    left: 20px;
+    border-right: 0;
+    border-bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.cright{
+    right: 40px;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+}
+
+.chin{
+    background-color: #fde2c4;
+    width: 180px;
+    height: 100px;
+    border-radius: 50%;
+    border-bottom: 5px solid #010101;
+    bottom: 0;
+    left: 170px;
+}
+
+.mouth-wrapper{
+    position: relative;
+    width: 420px;
+    height: 190px;
+    left: 47px;
+    top: 315px;
+    overflow: hidden;
+}
+
+.mouth {
+    position: relative;
+    overflow: hidden;
+    width: 155px;
+    height: 200px;
+    background-color: #010101;
+    border-radius: 50%;
+    left: 125px;
+    bottom: 0;
+    border-width: 5px 10px;
+    border-style: solid;
+    border-color: #010101;
+}
+
+.tongleft{
+    width: 100px;
+    height: 100px;
+    background-color: #fc8871;
+    border-radius: 50%;
+    bottom: -50px;
+    left: 0;
+}
+
+.tongright{
+    width: 100px;
+    height: 100px;
+    background-color: #fc8871;
+    border-radius: 50%;
+    border-top: 5px solid #010101;
+    bottom: -50px;
+    right: 0;
+}
+
+.lip {
+    width: 380px;
+    height: 280px;
+    background-color: #fde2c4;
+    border-radius: 50%;
+    border-bottom: 10px solid #010101;
+    bottom: 70px;
+    left: 15px;
+}
+
+.line {
+    width: 50px;
+    height: 20px;
+    border-top: 5px solid #010101;
+    border-radius: 50%;
+    top: 5px
+}
+.lleft{
+    left: 0;
+    transform: rotate(-20deg);
+}
+.lright {
+    right: 10px;
+    transform: rotate(20deg);
+}
+
+.eyes {
+    position: relative;
+    width: 160px;
+    height: 190px;
+    top: 110px;
+    left: 170px
+}
+.eye {
+    width: 60px;
+    height: 180px;
+    position: relative;
+    background-color: white;
+    border-radius: 52%;
+    top: 0;
+    overflow: hidden;
+    border-width: 3px 7px;
+    border-style: solid;
+    border-color: black;
+}
+
+.eleft {
+    left: 0;
+    transform: rotate(-5deg);
+}
+
+.eright {
+    right: 0;
+    transform: rotate(5deg);
+}
+
+.pupil {
+    width: 35px;
+    height: 65px;
+    background-color: #010101;
+    border-radius: 50%;
+    bottom: 0;
+}
+
+.eye.eleft .pupil {
+    left: 15px;
+}
+
+.eye.eright .pupil {
+    left: 10px;
+}
+.topnose{
+    width: 140px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fde2c4;
+    border-top: 8px solid #010101;
+    left: 182px;
+    top: 270px;
+}
+
+.nose {
+    width: 155px;
+    height: 85px;
+    background-color: #010101;
+    border-radius: 48%;
+    left: 175px;
+    top: 290px
+}
